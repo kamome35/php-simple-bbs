@@ -11,12 +11,6 @@ https://php-simple-bbs.herokuapp.com/
 
 - PHP
 
-## initial setting
-
-```bash
-$ cp config.ini.template config.ini
-```
-
 ## next version
 
 [php-bbs](https://github.com/kyoronet/php-bbs)
