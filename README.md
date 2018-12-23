@@ -3,17 +3,18 @@
 operating with csv data.
 easy to build.
 
+## demo
+
+https://php-simple-bbs.herokuapp.com/
+
 ## language
 
 - PHP
 
-version as of 2008-2009
-
 ## initial setting
 
 ```bash
-$ cd config
-$ cp main.ini.template main.ini
+$ cp config.ini.template config.ini
 ```
 
 ## next version
