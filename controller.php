@@ -8,8 +8,6 @@ class controller
 	 ************************************/
 	function controller()
 	{
-		//internal_encoding("Shift_JIS"); 
-		//regex_encoding("Shift_JIS"); 
 		global $ini_data,$post_data,$get_data,$cookie_data;
 		$post_name   = array("number","name","mail","url","title","com","key","cookie","pre","page","action");
 		$get_name    = array("mode","page","no","quote","type","srch");
