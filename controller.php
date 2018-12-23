@@ -317,7 +317,8 @@ class controller
 		// トピック
 		$this -> html_topic($view_data[0]);
 		echo "</table>\n";
-		echo "<img src=\"./img/line.png\" border=\"0\">\n";
+		echo "<br />\n";
+		echo "<br />\n";
 		echo "<table class=\"style\" style=\"width:100%;\">\n";
 		// トピックの記事
 		$total = count($view_data);
@@ -1343,7 +1344,8 @@ class controller
 		// トピック
 		$this -> html_master_res($view_data[0],0);
 		echo "</table>\n";
-		echo "<img src=\"./img/line.png\" border=\"0\">\n";
+		echo "<br />\n";
+		echo "<br />\n";
 		echo "<table class=\"style\" style=\"width:100%;\">\n";
 		// トピックの記事
 		$total = count($view_data);
@@ -1991,7 +1993,8 @@ class controller
 		// トピック
 		$this -> html_topic($view_data[0]);
 		echo "</table>\n";
-		echo "<img src=\"./img/line.png\" border=\"0\">\n";
+		echo "<br />\n";
+		echo "<br />\n";
 		echo "<table class=\"style\" style=\"width:100%;\">\n";
 		// トピックの記事
 		$total = count($view_data);
