@@ -627,7 +627,7 @@ class controller
 		$str = str_replace( ",", "，", $str);
 		$str = stripslashes($str);
 		$str = htmlspecialchars($str, ENT_QUOTES);
-		$str = preg_replace("/()\n|\r|\r\n)/","<br>", $str);
+		$str = preg_replace("/(\n|\r|\r\n)/","<br>", $str);
 		return $str;
 	}
 	
