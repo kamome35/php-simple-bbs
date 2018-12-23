@@ -2016,7 +2016,7 @@ class controller
 		echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n";
 		echo "<html lang=\"ja\">\n";
 		echo "<head>\n";
-		echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=Shift_JIS\">\n";
+		echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n";
 		echo "<title>".bbs_title."</title>\n";
 		echo "<style type=\"text/css\">\n";
 		echo "<!--\n";
