@@ -584,8 +584,8 @@ class controller
 			return "E-mailが長すぎます";
 		else if(strlen($post_data["com"]) > comment_len)
 			return "コメントが長すぎます";
-		else if($post_data["name"] == master_name && $post_data["key"] != master_pass)
-			return "管理人名は使えません";
+		//else if($post_data["name"] === master_name && $post_data["key"] !== master_pass)
+		//	return "管理人名は使えません";
 		else if(!preg_match("/^[0-9]+$/", $post_data["number"]))
 			return "記事番号が不正です";
 		else if(!preg_match("/^([.0-9a-z_+-]+)@(([0-9a-z-]+\.)+[0-9a-z]{2,})$|^$|^$/i", $post_data["mail"]))
