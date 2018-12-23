@@ -56,6 +56,10 @@ class controller
 		{
 			touch(res_log);
 		}
+		if(!is_file(count_log))
+		{
+			touch(count_log);
+		}
 		if(!is_file(lock_file))
 		{
 			touch(lock_file);
