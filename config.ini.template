@@ -1,0 +1,133 @@
+;---------------------------------------
+;	基本設定（変更必須）
+;---------------------------------------
+
+;ホームアドレス
+site_url = "http://example.com/"
+
+;掲示板タイトル
+bbs_title = "掲示板"
+bbs_title_img = "<img src='./img/bbs.gif' border='0'>"
+
+;掲示板サブメッセージ（空欄可）
+bbs_message = "<img src='./img/point.gif' border='0'>雑談から質問まで、どんな内容でも気軽に書き込み下さい。"
+
+;BBSまでのアドレス
+bbs_dir = "http://example.com/bbs/"
+
+;過去ログのディレクトリ名
+kako_dir = "data"
+
+;管理人の名前
+master_name = "admin"
+
+;管理人の認証キー
+master_pass = "admin123"
+
+;-------------------------------------------
+;	オプション（以下の変更は任意）
+;-------------------------------------------
+
+;URL自動リンクを許可する（1=許可,0=不許可）
+url_flag = 1
+
+;指定のタグを許可する（「|」区切りで複数指定可能,空欄＝全タグ禁止）
+;tag_member = "b"（未実装）
+
+;1ページに表示するトピック件数
+topic_num = 20
+
+;1つのトピックの最大記事数
+max_num = 50
+
+;トピック　ログ最大数
+max_log = 70
+
+;過去ログ件数（トピック数 > 過去ログ件数）【デフォルト：100　-　50
+max_memory = 50
+
+;新着表示時間
+new_time = 24
+
+;新着形式（画像仕様可能）
+new_type = "<img src='./img/new.gif' border='0'>"
+
+;タイトルの最大文字数（半角=1バイト）【例：50＝25文字（全角）
+title_len = 50
+;名前の最大文字数（半角=1バイト）【例：40＝20文字（全角）
+name_len = 40
+;URLの最大文字数（半角=1バイト）
+url_len = 100
+;Emailアドレスの最大文字数（半角=1バイト）
+mail_len = 100
+;名前の最大文字数（半角=1バイト）【例：2000＝1000文字（全角）
+comment_len = 2000
+
+;投稿者が削除した時のメッセージ
+del_mge = "(投稿者により削除されました)"
+
+;--------------------
+;	配色
+;--------------------
+;背景色
+back_color   = "#ffffff"
+;背景画像
+back_img     = "http://example.com/white/navi.jpg"
+
+;メイン文字
+font_color1  = "#000000"
+;タイトル文字
+font_color2  = "#006666"
+
+;テーブル枠
+table_color1 = "#d0e7ff"
+;テーブル背景
+table_color2 = "#005ab5"
+;テーブル背景2
+table_color3 = "#ffffff"
+
+;リンク
+a_link    = "#0066cc"
+;済み
+a_visited = "#666699"
+;選択時
+a_hover   = "#99ffff"
+
+;アイコン画像
+new_icon   = "<img src='./img/new.gif' border='0'>"
+home_icon  = "<img src='./img/home.gif' border='0'>"
+topic_icon = "<img src='./img/topic.gif' border='0'>"
+write_icon = "<img src='./img/write.gif' border='0'>"
+tel_icon   = "<img src='./img/tel.gif' border='0'>"
+up_icon    = "<img src='./img/up.gif' border='0'>"
+point_icon = "<img src='./img/point.gif' border='0'>"
+search_icon   = "<img src='./img/search.gif' border='0'>"
+beginner_icon = "<img src='./img/beginner.gif' border='0'>"
+
+;-----------------------
+;	ファイル名
+;-----------------------
+
+;BBSファイル名
+bbs_name = "index.php"
+
+;topicファイル名
+topic_log = "./log/topic.csv"
+
+;topicファイル名
+topic_log = "./log/topic.csv"
+
+;resファイル名
+res_log = "./log/res.csv"
+
+;カウンタファイル名
+count_log = "./log/count.log"
+
+;ロックファイル名
+lock_file = "./log/lock.txt"
+
+;バックアップファイル名（記事の編集・削除時に過去ログを取る）
+;backup_log = "./log/backup.txt"（未実装）
+
+;パスワードファイル名
+pass_file = "./pass.ini"
