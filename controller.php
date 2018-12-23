@@ -233,7 +233,7 @@ class controller
 				$name_list[] = "<a href=\"#{$data[0]}\" title=\"記事No:{$data[0]}\">[{$data[0]}]&nbsp;{$data[4]}</a><br>\n";
 				if($data[0] == $get_data["quote"])
 				{
-					$data[7] = ereg_replace("<br>","\n> ", $data[7]);
+					$data[7] = preg_replace("<br>","\n> ", $data[7]);
 					$quote = "> ".$data[7];
 				}
 				break;
@@ -254,7 +254,7 @@ class controller
 				}
 				if($data[0] == $get_data["quote"])
 				{
-					$data[7] = ereg_replace("<br>","\n> ", $data[7]);
+					$data[7] = preg_replace("<br>","\n> ", $data[7]);
 					$quote = "> ".$data[7];
 				}
 				
@@ -610,7 +610,7 @@ class controller
 		$str = str_replace( ",", "，", $str);
 		$str = stripslashes($str);
 		$str = htmlspecialchars($str, ENT_QUOTES);
-		$str = ereg_replace("\n|\r|\r\n","<br>", $str);
+		$str = preg_replace("\n|\r|\r\n","<br>", $str);
 		return $str;
 	}
 	
@@ -1035,7 +1035,7 @@ class controller
 	// エンコード
 	function encode(&$data)
 	{
-		$data[7] = ereg_replace("<br>","\n", $data[7]);
+		$data[7] = preg_replace("<br>","\n", $data[7]);
 		if(url_flag)
 		{
 			$data[7] = preg_replace( "/<a .+>(http:\/\/[\w\.\/\-=&%?;#]+)<\/a>/i", "$1", $data[7]);
@@ -1594,7 +1594,7 @@ class controller
 			$search = $this -> str_convert($get_data["srch"]);
 			$search = str_replace("\\", "\\\\", $search);
 			$search = trim($search, " 　");
-			$search = ereg_replace("[ |　]+", "|", $search);
+			$search = preg_replace("[ |　]+", "|", $search);
 			
 			foreach($get_data["type"] as $val)
 			{
@@ -1649,7 +1649,7 @@ class controller
 			switch($val)
 			{
 				case"title":
-					// if($data[3] = ereg_replace("(".$search.")", "<span style=\"background-color:#ffff00\">\\1</span>", $data[3]))
+					// if($data[3] = preg_replace("(".$search.")", "<span style=\"background-color:#ffff00\">\\1</span>", $data[3]))
 					if(ereg($search, $data[3]))
 					{
 						$search_data[] = $data;
@@ -1909,7 +1909,7 @@ class controller
 				$name_list[] = "<a href=\"#{$data[0]}\" title=\"記事No:{$data[0]}\">[{$data[0]}]&nbsp;{$data[4]}</a><br>\n";
 				if($data[0] == $get_data["quote"])
 				{
-					$data[7] = ereg_replace("<br>","\n> ", $data[7]);
+					$data[7] = preg_replace("<br>","\n> ", $data[7]);
 					$quote = "> ".$data[7];
 				}
 				break;
@@ -1930,7 +1930,7 @@ class controller
 				}
 				if($data[0] == $get_data["quote"])
 				{
-					$data[7] = ereg_replace("<br>","\n> ", $data[7]);
+					$data[7] = preg_replace("<br>","\n> ", $data[7]);
 					$quote = "> ".$data[7];
 				}
 				
