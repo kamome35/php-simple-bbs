@@ -2,6 +2,8 @@
 define("script_ver", "1.00");
 require_once('controller.php');
 
+date_default_timezone_set('Asia/Tokyo');
+
 $controller = new controller();
 
 switch($get_data["mode"])
