@@ -39,7 +39,7 @@ switch($get_data["mode"])
 		$controller -> topic_view();
 }
 ?>
-<br><div style="text-align:right;width:90%;white-space:nowrap;"><a href="<?=bbs_name?>?mode=master" title="アクセス履歴は保存されます">管理室</a>&nbsp;&nbsp;&nbsp;<a href="http://example.com/" target="_blank" title="ver.<?=script_ver?>">EasyBBS</a></div>
+<br><div style="text-align:right;width:90%;white-space:nowrap;"><a href="<?=bbs_name?>?mode=master" title="アクセス履歴は保存されます">管理室</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/kyoronet/php-simple-bbs" target="_blank" title="ver.<?=script_ver?>">EasyBBS</a></div>
 </center>
 </body>
 </html>
