@@ -571,7 +571,7 @@ class controller
 			return "E-Mailが不正です";
 		else if(!preg_match("/^http:\/\/|^$/i", $post_data["url"]))
 			return "URLが不正です";
-		else if(!ereg_match(".*[ぁ-んァ-ン]", $post_data["com"]))
+		else if(!mb_ereg_match(".*[ぁ-んァ-ン]", $post_data["com"]))
 			return "スパムフィルター";
 		return NULL;
 	}
