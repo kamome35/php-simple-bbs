@@ -3,3 +3,4 @@
 !/data/README.md
 /log/*
 !/log/.gitkeep
+!/log/README.md
