@@ -78,10 +78,15 @@ class controller
 		
 		// ログファイル及びログ最大数の取得
 		$topic = file($ini_data["topic_log"]);
-		$total = count($topic);
+		$total = $topic ? count($topic) : 0;
 		
 		// トピックの表示
 		$this -> html_start();
+
+		if ($total === 0) {
+			echo "トピックがありません\n";
+			return;
+		}
 		echo "<table class=\"style\">\n";
 		for($i=$point; $i < $total; ++$i)
 		{
