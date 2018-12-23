@@ -8,8 +8,8 @@ class controller
 	 ************************************/
 	function controller()
 	{
-		mb_internal_encoding("Shift_JIS"); 
-		mb_regex_encoding("Shift_JIS"); 
+		//internal_encoding("Shift_JIS"); 
+		//regex_encoding("Shift_JIS"); 
 		global $ini_data,$post_data,$get_data,$cookie_data;
 		$post_name   = array("number","name","mail","url","title","com","key","cookie","pre","page","action");
 		$get_name    = array("mode","page","no","quote","type","srch");
@@ -186,9 +186,9 @@ class controller
 	function substr($str)
 	{
 		$str = str_replace("<br>", "", $str);
-		if(mb_strlen($str) > 75)
+		if(strlen($str) > 75)
 		{
-			return mb_substr($str, 0 , 75)."....";
+			return substr($str, 0 , 75)."....";
 		}
 		
 		return $str;
@@ -571,7 +571,7 @@ class controller
 			return "E-Mailが不正です";
 		else if(!preg_match("/^http:\/\/|^$/i", $post_data["url"]))
 			return "URLが不正です";
-		else if(!mb_ereg_match(".*[ぁ-んァ-ン]", $post_data["com"]))
+		else if(!ereg_match(".*[ぁ-んァ-ン]", $post_data["com"]))
 			return "スパムフィルター";
 		return NULL;
 	}
@@ -1649,22 +1649,22 @@ class controller
 			switch($val)
 			{
 				case"title":
-					// if($data[3] = mb_ereg_replace("(".$search.")", "<span style=\"background-color:#ffff00\">\\1</span>", $data[3]))
-					if(mb_ereg($search, $data[3]))
+					// if($data[3] = ereg_replace("(".$search.")", "<span style=\"background-color:#ffff00\">\\1</span>", $data[3]))
+					if(ereg($search, $data[3]))
 					{
 						$search_data[] = $data;
 						return 1;
 					}
 					break;
 				case"name":
-					if(mb_ereg($search, $data[4]))
+					if(ereg($search, $data[4]))
 					{
 						$search_data[] = $data;
 						return 1;
 					}
 					break;
 				case"com":
-					if(mb_ereg($search, $data[7]))
+					if(ereg($search, $data[7]))
 					{
 						$search_data[] = $data;
 						return 1;
