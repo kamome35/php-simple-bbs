@@ -48,6 +48,18 @@ class controller
 				$cookie_data[$key] = NULL;
 			}
 		}
+		if(!is_file(topic_log))
+		{
+			touch(topic_log);
+		}
+		if(!is_file(res_log))
+		{
+			touch(res_log);
+		}
+		if(!is_file(lock_file))
+		{
+			touch(lock_file);
+		}
 	}
 	
 	/************************************
