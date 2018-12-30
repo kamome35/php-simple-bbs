@@ -1,6 +1,4 @@
-# php-simple-bbs
-
-Topics BBS
+# Topics BBS
 
 ## Demo
 
