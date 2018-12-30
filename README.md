@@ -1,16 +1,15 @@
 # php-simple-bbs
 
-operating with csv data.
-easy to build.
+topics bbs
 
 ## demo
 
 https://php-simple-bbs.herokuapp.com/
 
-## language
+## Prerequisites
 
-- PHP
+- PHP 5
 
-## next version
+## New Version
 
 [php-bbs](https://github.com/kyoronet/php-bbs)
